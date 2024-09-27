@@ -1,47 +1,25 @@
-import React from 'react'
+import { data } from '@/constants'
 
 const Work = () => {
+	const { experience } = data
+
 	return (
 		<div className='container w-3/4 mx-auto mt-20'>
 			<p className='rammetto text-2xl'>Work Experience</p>
-
-			<div className='flex mt-8'>
-				<div className='mr-6'>
-					<p>Icon</p>
+			{experience.map((item, index) => (
+				<div key={index} className='flex mt-8'>
+					<div className='mr-6'>{item.icon}</div>
+					<div className='w-full xl:w-2/4'>
+						<p className='rammetto text-md'>
+							{item.position} : {item.company}
+						</p>
+						<p className='roboto-light text-sm mb-2'>{item.date}</p>
+						<p className='roboto-light text-sm'>
+							{item.description}
+						</p>
+					</div>
 				</div>
-				<div className='w-full lg:w-2/4'>
-					<p className='rammetto text-md'>
-						Independent Web Developer
-					</p>
-					<p className='roboto-light text-sm'>23.44 - 45.23</p>
-					<p className='roboto-light text-sm'>
-						Freelance Web Developer specializing in front-end UI
-						design. I collaborate with diverse clients and small
-						agencies to create innovative, engaging websites,
-						leveraging the latest design and development
-						technologies to achieve exceptional results.
-					</p>
-				</div>
-			</div>
-
-			<div className='flex mt-8'>
-				<div className='mr-6'>
-					<p>Icon</p>
-				</div>
-				<div className='w-full lg:w-2/4'>
-					<p className='rammetto text-md'>
-						Independent Web Developer
-					</p>
-					<p className='roboto-light text-sm'>23.44 - 45.23</p>
-					<p className='roboto-light text-sm'>
-						Freelance Web Developer specializing in front-end UI
-						design. I collaborate with diverse clients and small
-						agencies to create innovative, engaging websites,
-						leveraging the latest design and development
-						technologies to achieve exceptional results.
-					</p>
-				</div>
-			</div>
+			))}
 		</div>
 	)
 }

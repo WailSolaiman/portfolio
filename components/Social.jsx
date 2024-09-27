@@ -1,18 +1,20 @@
-import { FaGithub } from 'react-icons/fa6'
+import Link from 'next/link'
+
+import { data } from '@/constants'
 
 const Social = () => {
+	const { social } = data
+
 	return (
 		<div className='container w-3/4 mx-auto mt-6'>
 			<div className='flex'>
-				<div className='mr-5'>
-					<FaGithub size={30} />
-				</div>
-				<div className='mr-5'>
-					<FaGithub size={30} />
-				</div>
-				<div className='mr-5'>
-					<FaGithub size={30} />
-				</div>
+				{social.map((item, index) => (
+					<div key={index} className='mr-5'>
+						<Link href={item.link} passHref target='_blank'>
+							{item.icon}
+						</Link>
+					</div>
+				))}
 			</div>
 		</div>
 	)

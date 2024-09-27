@@ -1,25 +1,22 @@
-import React from 'react'
+import { data } from '@/constants'
 
 const Education = () => {
+	const { education } = data
+
 	return (
 		<div className='container w-3/4 mx-auto mt-20'>
 			<p className='rammetto text-2xl'>University</p>
 
 			<div className='flex mt-8'>
-				<div className='mr-6'>
-					<p>Icon</p>
-				</div>
-				<div className='w-full lg:w-2/4'>
-					<p className='rammetto text-md'>
-						B.Eng. in Computer Science / Software Engineering
+				<div className='mr-6'>{education.icon}</div>
+				<div className='w-full xl:w-2/4'>
+					<p className='rammetto text-md'>{education.field}</p>
+					<p className='text-sm'>{education.institute}</p>
+					<p className='roboto-light text-sm mb-2'>
+						{education.date}
 					</p>
-					<p className='roboto-light text-sm'>23.44 - 45.23</p>
 					<p className='roboto-light text-sm'>
-						Freelance Web Developer specializing in front-end UI
-						design. I collaborate with diverse clients and small
-						agencies to create innovative, engaging websites,
-						leveraging the latest design and development
-						technologies to achieve exceptional results.
+						{education.description}
 					</p>
 				</div>
 			</div>
