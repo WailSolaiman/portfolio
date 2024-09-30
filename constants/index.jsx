@@ -13,6 +13,8 @@ import onixImg from '@/public/Onix.jpg'
 import restauraImg from '@/public/Restaura.jpg'
 import echoRealmImg from '@/public/EchoRealm.jpg'
 import metaverseImg from '@/public/metaverse.jpg'
+import erxlebenImg from '@/public/erxleben.jpg'
+import dorenburgImg from '@/public/dorenburg.jpg'
 
 export const data = {
 	hero: {
@@ -58,6 +60,14 @@ export const data = {
 		{
 			name: 'peligroso',
 			image: peligrosoImg,
+		},
+		{
+			name: 'erxleben',
+			image: erxlebenImg,
+		},
+		{
+			name: 'dorenburg',
+			image: dorenburgImg,
 		},
 	],
 	experience: [
