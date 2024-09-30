@@ -7,6 +7,13 @@ import { FaWordpress } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { FaUserGraduate } from 'react-icons/fa'
 
+import sstylzImg from '@/public/sstylz.jpg'
+import peligrosoImg from '@/public/peligroso.jpg'
+import onixImg from '@/public/Onix.jpg'
+import restauraImg from '@/public/Restaura.jpg'
+import echoRealmImg from '@/public/EchoRealm.jpg'
+import metaverseImg from '@/public/metaverse.jpg'
+
 export const data = {
 	hero: {
 		firstname: 'Wail',
@@ -29,9 +36,28 @@ export const data = {
 	],
 	portfolio: [
 		{
-			name: '',
-			image: '',
-			link: '',
+			name: 'onix',
+			image: onixImg,
+		},
+		{
+			name: 'restaura',
+			image: restauraImg,
+		},
+		{
+			name: 'echo-realm',
+			image: echoRealmImg,
+		},
+		{
+			name: 'metaverse-world',
+			image: metaverseImg,
+		},
+		{
+			name: 'sstylz',
+			image: sstylzImg,
+		},
+		{
+			name: 'peligroso',
+			image: peligrosoImg,
 		},
 	],
 	experience: [

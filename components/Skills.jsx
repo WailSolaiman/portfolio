@@ -6,7 +6,7 @@ const Skills = () => {
 	return (
 		<div className='container w-3/4 mx-auto mt-20'>
 			<p className='rammetto text-2xl'>Skills</p>
-			<div className='flex mt-8'>
+			<div className='flex mt-4'>
 				{skills.map((item, index) => (
 					<div
 						key={index}
