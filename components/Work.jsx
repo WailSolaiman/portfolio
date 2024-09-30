@@ -4,7 +4,7 @@ const Work = () => {
 	const { experience } = data
 
 	return (
-		<div className='container w-3/4 mx-auto mt-20'>
+		<div className='container w-10/12 xl:w-8/12 m-auto mt-20'>
 			<p className='rammetto text-2xl'>Work Experience</p>
 			{experience.map((item, index) => (
 				<div key={index} className='flex mt-8'>
