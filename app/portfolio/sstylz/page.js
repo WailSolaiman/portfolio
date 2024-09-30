@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/navigation'
+import { Link } from 'next-view-transitions'
 import Image from 'next/image'
 
 import { IoArrowBackCircleOutline } from 'react-icons/io5'
@@ -16,8 +16,6 @@ import sstylzImg from '@/public/sstylz.jpg'
 import sstylzLogoImg from '@/public/sstylz-logo.png'
 
 const SStylz = () => {
-	const router = useRouter()
-
 	const tech = [
 		<FaWordpress size={40} />,
 		<SiWoocommerce size={60} />,
@@ -31,12 +29,11 @@ const SStylz = () => {
 			<div className='container w-11/12 lg:w-10/12 xl:w-8/12 m-auto'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-6 py-4'>
 					<div>
-						<button
-							type='button'
-							className='mb-8'
-							onClick={() => router.back()}>
-							<IoArrowBackCircleOutline size={50} />
-						</button>
+						<div className='mb-4'>
+							<Link href={'/'}>
+								<IoArrowBackCircleOutline size={50} />
+							</Link>
+						</div>
 
 						<motion.div
 							initial={{ opacity: 0, y: -5 }}
@@ -141,11 +138,11 @@ const SStylz = () => {
 						</motion.div>
 					</div>
 					<motion.div
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
+						initial={{ opacity: 0, x: 20 }}
+						whileInView={{ opacity: 1, x: 0 }}
 						transition={{
-							duration: 0.5,
-							delay: 0.5,
+							duration: 0.3,
+							delay: 0.2,
 							ease: 'easeInOut',
 						}}
 						viewport={{ once: true }}
