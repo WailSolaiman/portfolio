@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion'
 import { data } from '@/constants'
 
 const Work = () => {
@@ -7,7 +10,17 @@ const Work = () => {
 		<div className='container w-10/12 xl:w-8/12 m-auto mt-20'>
 			<p className='rammetto text-2xl'>Work Experience</p>
 			{experience.map((item, index) => (
-				<div key={index} className='flex mt-8'>
+				<motion.div
+					key={index}
+					className='flex mt-8'
+					initial={{ opacity: 0, x: -5 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					viewport={{ once: true }}
+					transition={{
+						duration: 0.5,
+						delay: 0.2 * index,
+						ease: 'easeInOut',
+					}}>
 					<div className='mr-6'>{item.icon}</div>
 					<div className='w-full xl:w-2/4'>
 						<p className='rammetto text-md'>
@@ -18,7 +31,7 @@ const Work = () => {
 							{item.description}
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			))}
 		</div>
 	)
