@@ -8,7 +8,16 @@ const Work = () => {
 
 	return (
 		<div className='container w-10/12 xl:w-8/12 m-auto mt-20'>
-			<p className='rammetto text-2xl'>Work Experience</p>
+			<motion.div
+				initial={{ opacity: 0, x: -5 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				viewport={{ once: true }}
+				transition={{
+					duration: 0.5,
+					ease: 'easeInOut',
+				}}>
+				<p className='rammetto text-2xl'>Work Experience</p>
+			</motion.div>
 			{experience.map((item, index) => (
 				<motion.div
 					key={index}
