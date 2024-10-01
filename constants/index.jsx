@@ -5,6 +5,9 @@ import { FaHtml5 } from 'react-icons/fa'
 import { FaContao } from 'react-icons/fa'
 import { FaWordpress } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
+import { FaCss3 } from 'react-icons/fa6'
+import { SiJavascript } from 'react-icons/si'
+import { RiNextjsLine } from 'react-icons/ri'
 import { FaUserGraduate } from 'react-icons/fa'
 
 import sstylzImg from '@/public/sstylz.jpg'
@@ -114,12 +117,32 @@ export const data = {
 	},
 	skills: [
 		{
+			name: 'HTML5',
+			icon: <FaHtml5 size={60} />,
+		},
+		{
+			name: 'CSS3',
+			icon: <FaCss3 size={60} />,
+		},
+		{
+			name: 'JavaScript',
+			icon: <SiJavascript size={60} />,
+		},
+		{
 			name: 'React',
 			icon: <FaReact size={60} />,
 		},
 		{
+			name: 'Next.js',
+			icon: <RiNextjsLine size={60} />,
+		},
+		{
 			name: 'WordPress',
 			icon: <FaWordpress size={60} />,
+		},
+		{
+			name: 'Contao',
+			icon: <FaContao size={60} />,
 		},
 	],
 }
