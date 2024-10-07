@@ -2,30 +2,32 @@
 
 import { motion } from 'framer-motion'
 import { Link } from 'next-view-transitions'
+import NextLink from 'next/link'
 import Image from 'next/image'
 
 import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import { FiExternalLink } from 'react-icons/fi'
-import { FaWordpress } from 'react-icons/fa6'
-import { SiWoocommerce } from 'react-icons/si'
+import { FaReact } from 'react-icons/fa'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3 } from 'react-icons/fa6'
-import { SiJavascript } from 'react-icons/si'
+import { RiTailwindCssFill } from 'react-icons/ri'
+import { TbBrandFramerMotion } from 'react-icons/tb'
+import { FaGithub } from 'react-icons/fa6'
 
-import peligrosoImg from '@/public/peligroso2.jpg'
-import peligrosoLogoImg from '@/public/peligroso-logo.png'
+import restauraImg from '@/public/Restaura.jpg'
+import restauraLogoImg from '@/public/restaura-logo.png'
 
-const Peligroso = () => {
+const Restaura = () => {
 	const tech = [
-		<FaWordpress size={40} />,
-		<SiWoocommerce size={60} />,
+		<FaReact size={40} />,
+		<RiTailwindCssFill size={40} />,
+		<TbBrandFramerMotion size={40} />,
 		<FaHtml5 size={40} />,
 		<FaCss3 size={40} />,
-		<SiJavascript size={40} />,
 	]
 
 	return (
-		<div className='min-h-[100vh] bg-[#f7d501] text-black flex'>
+		<div className='min-h-[100vh] bg-black text-white flex'>
 			<div className='container w-11/12 lg:w-10/12 xl:w-8/12 m-auto'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-6 py-4'>
 					<div>
@@ -42,21 +44,29 @@ const Peligroso = () => {
 							transition={{
 								duration: 0.5,
 								ease: 'easeInOut',
-							}}>
+							}}
+							className='flex items-center'>
 							<Image
-								src={peligrosoLogoImg}
-								alt='peligroso'
+								src={restauraLogoImg}
+								alt='restaura'
 								width={100}
 								className='h-auto'
 								priority
 							/>
+
+							<NextLink
+								href='https://github.com/WailSolaiman/restaura'
+								passHref
+								target='_blank'>
+								<FaGithub size={20} className='mx-4' />
+							</NextLink>
 						</motion.div>
 						<p className='rammetto my-6'>
 							<a
-								href='https://peligroso.store/'
+								href='https://restaura-three.vercel.app/'
 								target='_blank'
 								className='underline flex'>
-								<span className='text-5xl'>peligroso</span>{' '}
+								<span className='text-5xl'>Restaura</span>{' '}
 								<FiExternalLink size={20} />
 							</a>
 						</p>
@@ -70,17 +80,23 @@ const Peligroso = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								peligroso®: SH☻P OUR $H!T.
+								Restaura Paris: where every meal is a
+								masterpiece.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
-								Created a WooCommerce-powered e-commerce website
-								for Peligroso, a street style clothing store in
-								Saudi Arabia. The site features a dynamic and
-								user-friendly design, optimized for seamless
-								shopping experiences.
+								The Restaura website is a Single Page
+								Application (SPA) developed using React for
+								building dynamic user interfaces and managing
+								state. Framer Motion adds smooth animations,
+								while TailwindCSS ensures responsive,
+								utility-first styling. Vite powers fast
+								development and optimized builds, with ESLint
+								maintaining code quality.
 							</p>
 						</motion.div>
-						<p className='rammetto text-sm'>Technologies used:</p>
+						<p className='rammetto text-sm mb-4'>
+							Technologies used:
+						</p>
 						<motion.div className='flex flex-row justify-start items-center'>
 							{tech.map((item, index) => (
 								<motion.span
@@ -110,9 +126,9 @@ const Peligroso = () => {
 								ease: 'easeInOut',
 							}}>
 							<Image
-								src={peligrosoLogoImg}
-								alt='peligroso'
-								width={300}
+								src={restauraLogoImg}
+								alt='restaura'
+								width={350}
 								className='h-auto my-4'
 								priority
 							/>
@@ -129,11 +145,12 @@ const Peligroso = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-light text-sm'>
-								At peligroso, we're all about bold streetwear
-								that speaks your style. We drop exclusive pieces
-								that keep you fresh, confident, and always ahead
-								of the trend. Join the movement and rep the
-								vibe.
+								At Restaura Paris, we believe that great food
+								goes beyond taste; it tells a story of
+								dedication and creativity. From our chef's
+								signature creations to our attentive service,
+								every detail is curated to ensure your visit is
+								nothing short of exceptional.
 							</p>
 						</motion.div>
 					</div>
@@ -147,9 +164,9 @@ const Peligroso = () => {
 						}}
 						viewport={{ once: true }}
 						className='w-full min-h-[350px] sm:min-h-[500px] md:min-h-[600px] 
-						rounded-2xl shadow-sm border-black'
+						rounded-2xl shadow-sm border-[#fda4af] border-2'
 						style={{
-							backgroundImage: `url(${peligrosoImg.src})`,
+							backgroundImage: `url(${restauraImg.src})`,
 							backgroundRepeat: 'no-repeat',
 							backgroundPosition: 'center',
 							backgroundSize: 'cover',
@@ -160,4 +177,4 @@ const Peligroso = () => {
 	)
 }
 
-export default Peligroso
+export default Restaura
