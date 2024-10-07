@@ -70,7 +70,7 @@ const Peligroso = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								peligroso®: SH☻P OUR $H!T.
+								SH☻P OUR $H!T.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
 								Created a WooCommerce-powered e-commerce website

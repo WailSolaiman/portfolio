@@ -70,7 +70,7 @@ const SStylz = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								SStylz®: Where Fashion Flourishes.
+								Where Fashion Flourishes.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
 								Developed a modern e-commerce website for

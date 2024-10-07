@@ -80,8 +80,7 @@ const Restaura = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								Restaura Paris: where every meal is a
-								masterpiece.
+								Where every meal is a masterpiece.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
 								The Restaura website is a Single Page

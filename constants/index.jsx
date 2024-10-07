@@ -49,11 +49,11 @@ export const data = {
 			image: restauraImg,
 		},
 		{
-			name: 'echo-realm',
+			name: 'echorealm',
 			image: echoRealmImg,
 		},
 		{
-			name: 'metaverse-world',
+			name: 'metaverse',
 			image: metaverseImg,
 		},
 		{

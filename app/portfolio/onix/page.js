@@ -2,30 +2,34 @@
 
 import { motion } from 'framer-motion'
 import { Link } from 'next-view-transitions'
+import NextLink from 'next/link'
 import Image from 'next/image'
 
 import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import { FiExternalLink } from 'react-icons/fi'
-import { FaContao } from 'react-icons/fa'
-import { DiPhp } from 'react-icons/di'
+import { FaReact } from 'react-icons/fa'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3 } from 'react-icons/fa6'
-import { SiJavascript } from 'react-icons/si'
+import { RiTailwindCssFill } from 'react-icons/ri'
+import { TbBrandFramerMotion } from 'react-icons/tb'
+import { FaGithub } from 'react-icons/fa6'
 
-import erxlebenImg from '@/public/erxleben2.jpg'
-import erxlebenLogoImg from '@/public/erxleben-logo.png'
+import OnixImg from '@/public/Onix.jpg'
+import OnixLogoImg from '@/public/onix-logo.png'
 
-const Erxleben = () => {
+const Onix = () => {
 	const tech = [
-		<FaContao size={40} />,
-		<DiPhp size={60} />,
+		<FaReact size={40} />,
+		<RiTailwindCssFill size={40} />,
+		<TbBrandFramerMotion size={40} />,
 		<FaHtml5 size={40} />,
 		<FaCss3 size={40} />,
-		<SiJavascript size={40} />,
 	]
 
 	return (
-		<div className='min-h-[100vh] bg-[#cc749a] text-black flex'>
+		<div
+			className='min-h-[100vh] bg-gradient-to-r from-red-200 via-pink-200 
+            to-purple-200 text-black flex'>
 			<div className='container w-11/12 lg:w-10/12 xl:w-8/12 m-auto'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-6 py-4'>
 					<div>
@@ -42,21 +46,28 @@ const Erxleben = () => {
 							transition={{
 								duration: 0.5,
 								ease: 'easeInOut',
-							}}>
+							}}
+							className='flex items-center'>
 							<Image
-								src={erxlebenLogoImg}
-								alt='erxleben'
-								width={100}
+								src={OnixLogoImg}
+								alt='Onix'
+								width={80}
 								className='h-auto'
 								priority
 							/>
+							<NextLink
+								href='https://github.com/WailSolaiman/onix'
+								passHref
+								target='_blank'>
+								<FaGithub size={20} className='mx-4' />
+							</NextLink>
 						</motion.div>
 						<p className='rammetto my-6'>
 							<a
-								href='https://www.erxleben-art.com/'
+								href='https://onix-chi.vercel.app/'
 								target='_blank'
 								className='underline flex'>
-								<span className='text-5xl'>Erxleben</span>{' '}
+								<span className='text-5xl'>ONIX</span>{' '}
 								<FiExternalLink size={20} />
 							</a>
 						</p>
@@ -70,17 +81,21 @@ const Erxleben = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								Art Beyond Boundaries.
+								Elevate Your Digital Presence.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
-								This one-page website was developed using
-								Contao, PHP, HTML5, CSS3, and JavaScript. It
-								features a dynamic gallery function to showcase
-								the artist's work in a streamlined and engaging
-								way.
+								The Onix website was developed using React for
+								the frontend, Framer Motion for animations, and
+								Tailwind CSS for responsive styling. Vite was
+								employed as the build tool, with ESLint ensuring
+								code quality. PostCSS and Autoprefixer handled
+								cross-browser compatible CSS, and React Icons
+								were used for scalable icons.
 							</p>
 						</motion.div>
-						<p className='rammetto text-sm'>Technologies used:</p>
+						<p className='rammetto text-sm mb-4'>
+							Technologies used:
+						</p>
 						<motion.div className='flex flex-row justify-start items-center'>
 							{tech.map((item, index) => (
 								<motion.span
@@ -110,9 +125,9 @@ const Erxleben = () => {
 								ease: 'easeInOut',
 							}}>
 							<Image
-								src={erxlebenLogoImg}
-								alt='erxleben'
-								width={400}
+								src={OnixLogoImg}
+								alt='Onix'
+								width={350}
 								className='h-auto my-4'
 								priority
 							/>
@@ -129,11 +144,12 @@ const Erxleben = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-light text-sm'>
-								Monika Erxleben, born in 1959 in Germany, has
-								been living and working in Switzerland since
-								2009. She has been practicing acrylic painting
-								freely since 2012, having attended numerous
-								painting courses both domestically and abroad.
+								Onix is a cutting-edge digital and web agency
+								specializing in modern web solutions, UX/UI
+								design, and SEO services. Our goal is to help
+								businesses build, enhance, and monetize their
+								online presence with responsive and innovative
+								designs.
 							</p>
 						</motion.div>
 					</div>
@@ -147,9 +163,9 @@ const Erxleben = () => {
 						}}
 						viewport={{ once: true }}
 						className='w-full min-h-[350px] sm:min-h-[500px] md:min-h-[600px] 
-						rounded-2xl shadow-sm border-black'
+						rounded-2xl shadow-sm'
 						style={{
-							backgroundImage: `url(${erxlebenImg.src})`,
+							backgroundImage: `url(${OnixImg.src})`,
 							backgroundRepeat: 'no-repeat',
 							backgroundPosition: 'center',
 							backgroundSize: 'cover',
@@ -160,4 +176,4 @@ const Erxleben = () => {
 	)
 }
 
-export default Erxleben
+export default Onix

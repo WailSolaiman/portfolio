@@ -70,7 +70,7 @@ const Dorenburg = () => {
 								ease: 'easeInOut',
 							}}>
 							<p className='roboto-bold text-sm mb-4 w-full'>
-								Dorenburg: Event & Catering.
+								Event & Catering.
 							</p>
 							<p className='roboto-light text-sm my-4 w-full'>
 								Developed a WordPress site for Dorenburg,
