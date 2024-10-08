@@ -65,7 +65,7 @@ const EchoRealm = () => {
 								href='https://echorealm-tau.vercel.app/'
 								target='_blank'
 								className='underline flex'>
-								<span className='text-5xl'>EchoRealm</span>{' '}
+								<span className='text-5xl'>Echorealm</span>{' '}
 								<FiExternalLink size={20} />
 							</a>
 						</p>

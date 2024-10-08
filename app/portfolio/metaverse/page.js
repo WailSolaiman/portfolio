@@ -123,7 +123,7 @@ const MetaVerse = () => {
 							<Image
 								src={metaverseLogoImg}
 								alt='metaverse'
-								width={450}
+								width={350}
 								className='h-auto my-4'
 								priority
 							/>

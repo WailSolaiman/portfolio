@@ -46,7 +46,7 @@ const SStylz = () => {
 							<Image
 								src={sstylzLogoImg}
 								alt='sstylz'
-								width={100}
+								width={90}
 								className='h-auto'
 								priority
 							/>
@@ -112,7 +112,7 @@ const SStylz = () => {
 							<Image
 								src={sstylzLogoImg}
 								alt='sstylz'
-								width={300}
+								width={280}
 								className='h-auto mb-4'
 								priority
 							/>

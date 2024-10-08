@@ -18,11 +18,11 @@ const Skills = () => {
 				}}>
 				<p className='rammetto text-2xl'>Skills</p>
 			</motion.div>
-			<div className='flex mt-4'>
+			<div className='flex flex-wrap gap-6 mt-4'>
 				{skills.map((item, index) => (
 					<motion.div
 						key={index}
-						className='flex flex-col justify-center items-center mr-6'
+						className='flex flex-col justify-center items-center'
 						initial={{ opacity: 0, x: -5 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}

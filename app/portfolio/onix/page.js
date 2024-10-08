@@ -127,7 +127,7 @@ const Onix = () => {
 							<Image
 								src={OnixLogoImg}
 								alt='Onix'
-								width={350}
+								width={300}
 								className='h-auto my-4'
 								priority
 							/>

@@ -112,7 +112,7 @@ const Erxleben = () => {
 							<Image
 								src={erxlebenLogoImg}
 								alt='erxleben'
-								width={400}
+								width={350}
 								className='h-auto my-4'
 								priority
 							/>
