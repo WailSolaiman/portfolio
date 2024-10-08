@@ -26,10 +26,12 @@ const Skills = () => {
 						initial={{ opacity: 0, x: -5 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						viewport={{ once: true }}
+						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.9 }}
 						transition={{
-							duration: 0.5,
-							delay: 0.2 * index,
-							ease: 'easeInOut',
+							type: 'spring',
+							stiffness: 500,
+							damping: 10,
 						}}>
 						<span className='mb-2'>{item.icon}</span>
 						<span className='text-center text-xs'>{item.name}</span>

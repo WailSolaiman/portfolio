@@ -8,7 +8,7 @@ import Footer from '@/components/Footer'
 
 export default function Home() {
 	return (
-		<div>
+		<div className='bg-gradient-to-r from-slate-900 to-slate-700'>
 			<Hero />
 			<Social />
 			<Portfolio />

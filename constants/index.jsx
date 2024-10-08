@@ -1,6 +1,7 @@
 import { FaGithub } from 'react-icons/fa6'
 import { FaLinkedin } from 'react-icons/fa6'
 import { TfiEmail } from 'react-icons/tfi'
+import { TbFileCv } from 'react-icons/tb'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaContao } from 'react-icons/fa'
 import { FaWordpress } from 'react-icons/fa'
@@ -23,7 +24,7 @@ export const data = {
 	hero: {
 		firstname: 'Wail',
 		lastname: 'Solaiman',
-		about: "I'm a freelance front-end developer focused on making the web more creative, accessible, and engaging.",
+		about: 'As a freelance front-end developer, I create engaging and accessible web experiences.',
 	},
 	social: [
 		{
@@ -37,6 +38,10 @@ export const data = {
 		{
 			icon: <TfiEmail size={30} />,
 			link: 'mailto:me@wailsolaiman.com',
+		},
+		{
+			icon: <TbFileCv size={30} />,
+			link: 'https://drive.google.com/file/d/1uznmOUqd73UUaao9y5jdpdXRFlZUMEQ_/view?usp=sharing',
 		},
 	],
 	portfolio: [
@@ -76,35 +81,35 @@ export const data = {
 	experience: [
 		{
 			icon: <FaReact size={30} />,
-			position: 'Front-end Web Developer',
-			company: 'Freelancer',
+			position: 'Front-End Developer',
+			company: 'Freelance',
 			date: '2022 - Present',
 			description:
-				'Freelance Web Developer specializing in front-end UI design. I collaborate with diverse clients and small agencies to create innovative, engaging websites, leveraging the latest design and development technologies to achieve exceptional results.',
+				'Front-End Developer specializing in React, Next.js, and React Native. I build responsive websites and mobile apps with a focus on intuitive UI and performance, delivering engaging digital experiences.',
 		},
 		{
 			icon: <FaContao size={30} />,
-			position: 'Web Developer',
+			position: 'Front-End Developer',
 			company: 'Vicon Web Business, Germany',
 			date: 'July 2018 - September 2021',
 			description:
-				'Freelance Web Developer specializing in front-end UI design. I collaborate with diverse clients and small agencies to create innovative, engaging websites, leveraging the latest design and development technologies to achieve exceptional results.',
+				'Specialized in Contao CMS, focusing on developing themes and templates, managing back-end integration, troubleshooting content issues, and providing maintenance and support.',
 		},
 		{
 			icon: <FaWordpress size={30} />,
-			position: 'Web Developer',
+			position: 'Front-End Developer',
 			company: 'Anders Björk GmbH, Germany',
 			date: 'February 2017 - May 2018',
 			description:
-				"I specialize in creating exceptional websites for clients of Anders Björk Company, using the WordPress CMS. I have extensive experience in monitoring the performance of live websites, installing plugins, and providing maintenance and support for the company's clients websites.",
+				'Specialized in WordPress, focusing on developing themes and plugins, managing back-end integration, installing required plugins, troubleshooting content issues, monitoring website performance, and providing maintenance and support.',
 		},
 		{
 			icon: <FaHtml5 size={30} />,
-			position: 'Junior Front-end Web Developer',
+			position: 'Junior Front-End Developer',
 			company: 'Parrot Media, Germany',
 			date: 'September 2013 - September 2016',
 			description:
-				'I began my professional career as a junior front-end web developer at Parrot Media, where I gained valuable experience in creating and developing websites using core web languages such as HTML and CSS. Additionally, I have experience working with WordPress CMS, Vanilla JavaScript, and PHP.',
+				'Began my career as a junior front-end developer, gaining experience in website creation using HTML and CSS, along with WordPress, Vanilla JavaScript, and PHP.',
 		},
 	],
 	education: {

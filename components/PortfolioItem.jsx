@@ -12,13 +12,20 @@ const PortfolioItem = ({ image, name = 'sstylz', index = 0 }) => {
 			initial={{ opacity: 0, x: -5 }}
 			whileInView={{ opacity: 1, x: 0 }}
 			viewport={{ once: true }}
+			whileHover={{ scale: 1.1 }}
 			transition={{
-				duration: 0.5,
-				delay: 0.2 * index,
-				ease: 'easeInOut',
+				type: 'spring',
+				stiffness: 500,
+				damping: 10,
 			}}>
 			<Link href={`/portfolio/${name}`}>
-				<Image src={image} alt={name} placeholder='blur' priority />
+				<Image
+					src={image}
+					alt={name}
+					placeholder='blur'
+					priority
+					className='rounded-lg'
+				/>
 			</Link>
 		</motion.div>
 	)

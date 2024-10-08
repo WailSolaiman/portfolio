@@ -22,7 +22,7 @@ const Education = () => {
 				className='flex mt-8'
 				initial={{ opacity: 0, x: -5 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				viewport={{ once: true }}
+				viewport={{ once: false }}
 				transition={{
 					duration: 0.5,
 					delay: 0.6,

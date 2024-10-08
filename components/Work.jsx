@@ -24,7 +24,7 @@ const Work = () => {
 					className='flex mt-8'
 					initial={{ opacity: 0, x: -5 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					viewport={{ once: true }}
+					viewport={{ once: false }}
 					transition={{
 						duration: 0.5,
 						delay: 0.2 * index,
@@ -33,7 +33,7 @@ const Work = () => {
 					<div className='mr-6'>{item.icon}</div>
 					<div className='w-full xl:w-2/4'>
 						<p className='rammetto text-md'>
-							{item.position} : {item.company}
+							{item.position} | {item.company}
 						</p>
 						<p className='roboto-light text-sm mb-2'>{item.date}</p>
 						<p className='roboto-light text-sm'>
