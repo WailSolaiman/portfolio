@@ -5,6 +5,7 @@ import { TbFileCv } from 'react-icons/tb'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaContao } from 'react-icons/fa'
 import { FaWordpress } from 'react-icons/fa'
+import { SiWoo } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import { FaCss3 } from 'react-icons/fa6'
 import { SiJavascript } from 'react-icons/si'
@@ -48,34 +49,42 @@ export const data = {
 		{
 			name: 'onix',
 			image: onixImg,
+			dev: 'React',
 		},
 		{
 			name: 'restaura',
 			image: restauraImg,
+			dev: 'React',
 		},
 		{
 			name: 'echorealm',
 			image: echoRealmImg,
+			dev: 'React',
 		},
 		{
 			name: 'metaverse',
 			image: metaverseImg,
+			dev: 'React',
 		},
 		{
 			name: 'sstylz',
 			image: sstylzImg,
+			dev: 'WooCommerce',
 		},
 		{
 			name: 'peligroso',
 			image: peligrosoImg,
+			dev: 'WooCommerce',
 		},
 		{
 			name: 'erxleben',
 			image: erxlebenImg,
+			dev: 'Contao',
 		},
 		{
 			name: 'dorenburg',
 			image: dorenburgImg,
+			dev: 'WordPress',
 		},
 	],
 	experience: [
@@ -142,12 +151,16 @@ export const data = {
 			icon: <RiNextjsLine size={60} />,
 		},
 		{
+			name: 'Contao',
+			icon: <FaContao size={60} />,
+		},
+		{
 			name: 'WordPress',
 			icon: <FaWordpress size={60} />,
 		},
 		{
-			name: 'Contao',
-			icon: <FaContao size={60} />,
+			name: 'Woo',
+			icon: <SiWoo size={60} />,
 		},
 	],
 }

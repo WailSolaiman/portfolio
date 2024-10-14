@@ -25,9 +25,13 @@ const Portfolio = () => {
 						key={index}
 						image={item.image}
 						name={item.name}
+						dev={item.dev}
 						index={index}
 					/>
 				))}
+				<div className='w-[125px] h-[125px] md:w-[200px] md:h-[200px] mb-6 hidden xl:flex justify-center items-center'>
+					<p className='rammetto text-xs'>Loading...</p>
+				</div>
 			</div>
 		</div>
 	)

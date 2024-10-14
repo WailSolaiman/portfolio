@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { IoArrowBackCircleOutline } from 'react-icons/io5'
 import { FiExternalLink } from 'react-icons/fi'
 import { FaWordpress } from 'react-icons/fa6'
-import { SiWoocommerce } from 'react-icons/si'
+import { SiWoo } from 'react-icons/si'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3 } from 'react-icons/fa6'
 import { SiJavascript } from 'react-icons/si'
@@ -18,7 +18,7 @@ import peligrosoLogoImg from '@/public/peligroso-logo.png'
 const Peligroso = () => {
 	const tech = [
 		<FaWordpress size={40} />,
-		<SiWoocommerce size={60} />,
+		<SiWoo size={60} />,
 		<FaHtml5 size={40} />,
 		<FaCss3 size={40} />,
 		<SiJavascript size={40} />,
