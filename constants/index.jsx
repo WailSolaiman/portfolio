@@ -42,7 +42,7 @@ export const data = {
 		},
 		{
 			icon: <TbFileCv size={30} />,
-			link: 'https://drive.google.com/file/d/1uznmOUqd73UUaao9y5jdpdXRFlZUMEQ_/view?usp=sharing',
+			link: 'https://drive.google.com/file/d/1Z1O3OvtO_wJpZT6mDx9INOTrzf3bTwcl/view?usp=sharing',
 		},
 	],
 	portfolio: [
