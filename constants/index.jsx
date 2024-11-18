@@ -1,25 +1,25 @@
-import { FaGithub } from 'react-icons/fa6'
-import { FaLinkedin } from 'react-icons/fa6'
-import { TfiEmail } from 'react-icons/tfi'
-import { TbFileCv } from 'react-icons/tb'
-import { FaHtml5 } from 'react-icons/fa'
-import { FaContao } from 'react-icons/fa'
-import { FaWordpress } from 'react-icons/fa'
-import { SiWoo } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import { FaCss3 } from 'react-icons/fa6'
-import { SiJavascript } from 'react-icons/si'
-import { RiNextjsLine } from 'react-icons/ri'
-import { FaUserGraduate } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa6';
+import { FaLinkedin } from 'react-icons/fa6';
+import { TfiEmail } from 'react-icons/tfi';
+import { TbFileCv } from 'react-icons/tb';
+import { FaHtml5 } from 'react-icons/fa';
+import { FaContao } from 'react-icons/fa';
+import { FaWordpress } from 'react-icons/fa';
+import { SiWoo } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa';
+import { FaCss3 } from 'react-icons/fa6';
+import { SiJavascript } from 'react-icons/si';
+import { RiNextjsLine } from 'react-icons/ri';
+import { FaUserGraduate } from 'react-icons/fa';
 
-import sstylzImg from '@/public/sstylz.jpg'
-import peligrosoImg from '@/public/peligroso.jpg'
-import onixImg from '@/public/Onix.jpg'
-import restauraImg from '@/public/Restaura.jpg'
-import echoRealmImg from '@/public/EchoRealm.jpg'
-import metaverseImg from '@/public/metaverse.jpg'
-import erxlebenImg from '@/public/erxleben.jpg'
-import dorenburgImg from '@/public/dorenburg.jpg'
+import sstylzImg from '@/public/sstylz.jpg';
+import peligrosoImg from '@/public/peligroso.jpg';
+import onixImg from '@/public/Onix.jpg';
+import restauraImg from '@/public/Restaura.jpg';
+import echoRealmImg from '@/public/EchoRealm.jpg';
+import metaverseImg from '@/public/metaverse.jpg';
+import erxlebenImg from '@/public/erxleben.jpg';
+import dorenburgImg from '@/public/dorenburg.jpg';
 
 export const data = {
 	hero: {
@@ -42,7 +42,7 @@ export const data = {
 		},
 		{
 			icon: <TbFileCv size={30} />,
-			link: 'https://drive.google.com/file/d/1Z1O3OvtO_wJpZT6mDx9INOTrzf3bTwcl/view?usp=sharing',
+			link: 'https://drive.google.com/file/d/1uznmOUqd73UUaao9y5jdpdXRFlZUMEQ_/view?usp=sharing',
 		},
 	],
 	portfolio: [
@@ -163,4 +163,4 @@ export const data = {
 			icon: <SiWoo size={60} />,
 		},
 	],
-}
+};
